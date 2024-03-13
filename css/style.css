@@ -161,12 +161,11 @@ main .t3 {
     border: #ffffff 10px solid;
     transition: 0.5s;
 }
+
 /* h2 {
     display: flex; Separar os h2 de cada page
     color: #7F0909;
 } */
-
-
 
 /* Sessão de Hogwarts   */
 
@@ -320,7 +319,7 @@ main .t3 {
 
 .container-personagens {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     margin-top: 25px;
     margin-bottom: 25px;
