@@ -161,7 +161,7 @@ nav a:first-child {
 
 .container-livros {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     margin-top: 25px;
     margin-bottom: 25px;
