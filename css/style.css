@@ -116,7 +116,7 @@ nav a:first-child {
 }
 
 .img_fundo {
-    background-image: url("/img/Hp_fundo.jpg");
+    background-image: url("../img/Hp_fundo.jpg");
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
