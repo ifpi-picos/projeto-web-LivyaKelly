@@ -16,11 +16,14 @@ header {
     background-color: #7F0909;
     color: white;
     padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header img {
     width: 80px;
-    display: flex;
+    /* display: flex; */
 }
 
 nav {
@@ -34,9 +37,9 @@ nav a {
     font-size: 20px;
     color: white;
     padding: 5px;
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
-    margin-left: 10px;
+    margin-left: 10px; */
 }
 
 nav a:first-child {
@@ -49,6 +52,7 @@ nav a:first-child {
     margin-top: 50px;
     flex-wrap: wrap;
 }
+
 .text{
     font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
@@ -80,16 +84,6 @@ nav a:first-child {
     border-radius: 35px;
 }
 
-main .t3 {
-    display: flex;
-    align-items: center;
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    margin: 30px 0 40px 58%;
-    margin-top: 6%;
-    text-align: justify;
-}
-
 .perfil {
     border-radius: 5px;
     width: 390px;
@@ -102,6 +96,16 @@ main .t3 {
 .perfil:hover {
     border: #ffffff 10px solid;
     transition: 0.5s;
+}
+
+main .t3 {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 30px 0 40px 58%;
+    margin-top: 6%;
+    text-align: justify;
 }
 
 .amigos {
@@ -162,32 +166,22 @@ main .t3 {
     transition: 0.5s;
 }
 
-/* h2 {
-    display: flex; Separar os h2 de cada page
-    color: #7F0909;
-} */
-
 /* Sessão de Hogwarts   */
 
 .fundo {
     overflow-y: hidden;
 }
 
-.img_fundo {
-    background-image: url("../img/Hp_fundo.jpg");
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-    z-index: -10;
-    height: 84vh;
+.container-hogwarts {
+    background-color: #efe691d2;
+    height: 100vh;
     min-width: 100%;
 }
 
 .txt-hogwarts {
     margin-right: 10px;
-    color: white;
+    color: #7F0909;
     font-size: 25px;
-    text-shadow: #0b0000 2px 2px 2px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -196,14 +190,8 @@ main .t3 {
 .hogwarts {
     margin: auto;
     width: 80%;
-    color: white;
+    color: #7F0909;
     font-size: 22px;
-    font: bold;
-    text-shadow: #0b0000 4px 4px 4px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    text-align: justify;
 }
 
 .hogwarts .txt-1 {
@@ -216,7 +204,7 @@ main .t3 {
 .titulo-casas {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 15%;
 }
 
 .container-casas {
@@ -346,4 +334,213 @@ main .t3 {
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 15px;
+}
+
+/* Sessão responsiva para Tablet */
+@media screen and (max-width: 768px) {
+    /* Página inicial responsiva */
+    nav {
+        gap: 12px;
+    }
+    .container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        text-align: justify;  
+    }
+
+    .text {
+        width: 90%;
+        margin: 0%;
+    }
+
+    .titulo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-potter img {
+        margin-right: 0;
+    }
+
+    .perfil {
+        width: 300px;
+        height: 350px;
+    }
+
+    .perfil:hover {
+        border: #ffffff 10px solid;
+        transition: 0.5s;
+    }
+
+    main .t3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0%;
+        margin-top: 6%;
+        margin-bottom: 6% ;
+    }
+
+    .amigos {
+        gap: 20px;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .trio-amigos {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        width: 90%;
+        margin-right: 0;
+
+    }
+
+    .imgs-golden {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        margin-right: 0;
+        margin-left: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* .img-ouro {
+        margin-bottom: 0;
+    } */
+
+    .img-golden {
+        margin-bottom: 20px;
+    }
+
+    /* Sessão livros responsiva */
+    .container-livros {
+        grid-template-columns: 1fr;
+        margin-left: 25px;
+    }
+
+    /* Sessão filmes responsiva */
+    .container-filmes {
+        grid-template-columns: 1fr;
+        margin-left: 0;
+    }
+
+    /* Sessão personagens responsiva */
+    .container-personagens {
+        grid-template-columns: 1fr;
+        margin-left: 0;
+    }
+    
+}
+
+/* Sessão responsiva para celular */
+@media screen and (max-width: 425px){
+    /* Página inicial responsiva */
+    nav {
+        gap: 9px;
+        width: 100%;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        text-align: justify;  
+    }
+
+    .text {
+        width: 90%;
+        margin: 0%;
+    }
+
+    .titulo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-potter img {
+        margin-right: 0;
+    }
+
+    .perfil {
+        width: 300px;
+        height: 350px;
+    }
+
+    .perfil:hover {
+        border: #ffffff 10px solid;
+        transition: 0.5s;
+    }
+
+    main .t3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0%;
+        margin-top: 6%;
+        margin-bottom: 6% ;
+    }
+
+    .amigos {
+        gap: 20px;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .trio-amigos {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        width: 90%;
+        margin-right: 0;
+
+    }
+
+    .imgs-golden {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin-right: 0;
+        margin-left: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imgs-golden img {
+        margin-bottom: 0;
+        width: 100%;
+    }
+
+    /* .img-golden {
+        margin-bottom: 20px;
+    } */
+
+    /* Sessão livros responsiva */
+    .container-livros {
+        grid-template-columns: 1fr;
+        margin-left: 25px;
+    }
+
+    /* Sessão filmes responsiva */
+    .container-filmes {
+        grid-template-columns: 1fr;
+        margin-left: 0;
+    }
+
+    /* Sessão personagens responsiva */
+    .container-personagens {
+        grid-template-columns: 1fr;
+        margin-left: 0;
+    }
+    
 }
