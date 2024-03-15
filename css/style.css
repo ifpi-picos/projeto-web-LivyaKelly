@@ -26,6 +26,15 @@ header img {
     /* display: flex; */
 }
 
+header span {
+    display: none;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
 nav {
     background-color: #7F0909;
     display: flex;
@@ -442,15 +451,35 @@ main .t3 {
 }
 
 /* Sessão responsiva para celular */
-@media screen and (max-width: 480px){
+@media screen and (max-width: 576px){
     /* Página inicial responsiva */
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    header span {
+        display: block;
+        position: absolute;
+        right: 1rem;
+        font-size: 2rem;
+        cursor: pointer;
+        margin-top: 15px;
+    }
+
+    nav.mobile {
+        display: flex;
+        justify-content: center;
+    }
+
     nav {
+        display: none;
         gap: 9px;
         width: 100%;
     }
 
     nav a {
-        font-size: 13px;
+        font-size: 1.2rem;
     }
 
     .container {

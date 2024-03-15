@@ -6,19 +6,23 @@
     <meta name="Autora" content="Livya Kelly" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="img/HP-banner.png" type="image/png" sizes="16x16" />
+    <script src="js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <title>Harry Potter</title>
   </head>
   <body>
     <header>
+      <a href="index.html">
+        <img src="img/Harry_logo.png" alt="Foto Harry"/>
+      </a>
       <nav>
-        <a href="index.html">
-          <img src="img/Harry_logo.png" alt="Foto Harry"/>
-        </a>
         <a href="hogwarts.html">Hogwarts</a>
         <a href="livros.html">Livros</a>
         <a href="filmes.html">Filmes</a>
         <a href="personagens.html">Personagens</a>
       </nav>
+      <span onclick="toggleNav()"><ion-icon name="menu-outline"></ion-icon></span>
     </header>
     <main>
       <div class="container">
