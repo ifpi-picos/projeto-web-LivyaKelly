@@ -168,11 +168,30 @@ main .t3 {
 .img-golden {
     border-radius: 15px;
     border: #7F0909 6px solid;
+    margin-bottom: 50px;
 }
 
 .img-golden:hover {
     border: #ffffff 10px solid;
     transition: 0.5s;
+}
+
+.footer {
+    width: 100%;
+    background-color: #292828;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }
 
 /* Sessão de Hogwarts   */
@@ -189,7 +208,7 @@ main .t3 {
 .txt-hogwarts {
     margin-top: 30px;
     margin-right: 10px;
-    color: #b20a0a;
+    color: #000000;
     font-size: 20px;
     display: flex;
     flex-direction: column;
@@ -199,7 +218,7 @@ main .t3 {
 .hogwarts {
     margin: 0 auto;
     width: 80%;
-    color: #b20a0a;
+    color: #000000;
     font-size: 21px;
 }
 
@@ -428,7 +447,17 @@ main .t3 {
 
     .img-golden {
         margin-bottom: 20px;
-    } 
+    }
+
+    .footer {
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    .footer a {
+        margin: 0 10px;
+        font-size: 14px;
+    }
 
     /* Sessão livros responsiva */
     .container-livros {
@@ -556,6 +585,16 @@ main .t3 {
 
     .img-golden {
         margin-bottom: 20%;
+    }
+
+    .footer {
+        padding: 15px 5px;
+        font-size: 12px;
+    }
+
+    .footer a {
+        margin: 0 8px;
+        font-size: 12px;
     }
 
     /* Sessão hogwarts responsiva */
